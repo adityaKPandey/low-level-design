@@ -25,7 +25,8 @@ public class Game {
       List<Pair<Integer, Integer>> freeCells = board.getFreeCells();
       if (freeCells.isEmpty()) {
         gameOver = true;
-        System.out.println("Game is draw");
+        System.out.println("Game ends in a draw");
+        continue;
       }
 
       Player player = players.pollFirst();
